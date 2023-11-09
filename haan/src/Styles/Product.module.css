@@ -1,0 +1,150 @@
+.image {
+  
+  padding: 10px;
+  width: 100%;
+  margin:auto;
+  justify-content: space-around;
+}
+.cardImage{
+  padding:10px;
+}
+/* .bottom{
+  padding: 100px;
+} */
+.text {
+  background-color: rgb(193, 221, 198);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Function {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Function {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+.card{
+    margin: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius:12px;
+
+}
+.card img{
+    width: 100%;
+    transform: scale(1.05);
+    border-radius: 12px;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+ }
+ .mainCard{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+ }
+ .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .pagination span{
+    margin-bottom: -9px;
+}
+/* .button{
+    padding: 5px 22px;
+    font-size: 10px;
+} */
+.sortDiv{
+   
+}
+
+.searchDiv{
+  
+
+}
+.filterDiv{
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+
+}
+
+.elembody{
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.elembody h4{
+  padding: 0;
+  margin: 8px;
+}
+.button {
+  padding-right:"15px";
+  padding-left:"15px";
+  font-size:'large';
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(27,27,27);
+  color: white;
+  padding: 10px 15px 10px 15px;
+  /* padding: 5px 10px; */
+  /* background: linear-gradient(90deg, rgba(27,27,27,1) 20%, rgba(0,128,128,1) 64%); */
+  justify-content: center;
+}
+.button:hover{
+ 
+  /* background: rgb(27,27,27); */
+  background: linear-gradient(90deg, rgba(27,27,27,1) 20%, rgba(0,128,128,1) 64%);
+  
+}
+.purchase{
+  display: flex;
+  justify-content: space-between;
+}
+.purchase button{
+  padding-right:"15px";
+  padding-left:"15px";
+  font-size:'large';
+  border: none;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  background: teal;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  /* padding: 5px 10px; */
+  /* background: linear-gradient(90deg, rgba(27,27,27,1) 20%, rgba(0,128,128,1) 64%); */
+  
+}
+
+
+
+
+.purchase button:hover{
+ 
+  /* background: rgb(27,27,27); */
+  background: linear-gradient(90deg, rgba(27,27,27,1) 20%, rgba(0,128,128,1) 64%);
+  
+}

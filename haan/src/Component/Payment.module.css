@@ -1,0 +1,286 @@
+.paymentDiv{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    gap:5px;
+    padding: 5px;
+    /* align-items: center; */
+}
+.paymentDiv>div:first-child{
+    width:50%;
+    border-right: 1.2px solid grey;
+    padding:5px;
+    margin-top: -5px;
+}
+.paymentDiv>div:first-child>form{
+    font-size: larger;
+    font-weight: bold;
+}
+.paymentDiv>div:first-child>form>input{
+    width:90%;
+    height: 40px;
+    border-color: grey;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: large;
+    align-items: baseline;
+}
+
+.paymentDiv>div:first-child>form>button{
+margin-top:10px;
+font-size: large;
+padding: 10px 20px 10px 20px;
+/* background-color: green; */
+color: white;
+border: none;
+border-radius: 10px;
+background:rgb(27,27,27);
+
+}
+.paymentDiv>div:first-child>form>button:hover{
+    background: linear-gradient(90deg, rgba(27,27,27,1)20%, rgba(0,128,128,1)64%);
+}
+
+.paymentDiv>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    /* border: 1px solid blue; */
+    gap:5px;
+    padding:5px;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+.paymentDiv>div:nth-child(2)>div:first-child{
+    width:100%;
+    height:70%;
+    align-items: center;
+    /* border:1px solid blue; */
+}
+.paymentDiv>div:nth-child(2)>div:first-child>div{
+    /* width:70%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.paymentDiv>div:nth-child(2)>div:first-child>div>div{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    gap:10px;
+}
+
+.paymentDiv>div:nth-child(2)>div:first-child>div>p{
+    margin-right: 5px;
+}
+
+.paymentDiv>div:nth-child(2)>div:last-child{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* border: 1px solid green; */
+    font-size: larger;
+}
+.paymentDiv>div:nth-child(2)>div:last-child>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* scrollablecontianer */
+.scrollableContainer{
+    margin:10px;
+    max-height: 480px;
+    max-width: fit-content;
+    overflow-y: auto;
+    scrollbar-width:auto;
+    scrollbar-color: rgb(8,204,218);
+    background-color: white;
+    color:black;
+}
+.scrollableContainer::-webkit-scrollbar{
+    width:10px;
+    height:5px;
+}
+.scrollableContainer::-webkit-scrollbar-thumb{
+    background-color: #689f9c;
+
+}
+
+.scrollableContainer::-webkit-scrollbar-track{
+    background-color: #f0f0f0;
+
+}
+
+/* css for pop up form for the payment page */
+.paymentPageDiv{
+    width: 25%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 25%;
+    left:35%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: rgba(0, 0, 0, 0.247); */
+    background-color: white;
+    /* border-radius: 10px; */
+}
+.paymentPageDiv>div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    /* padding-right: 5px; */
+    background-color: #2446ea;
+    color:white;
+    align-items: center;
+}
+.paymentPageDiv>div:first-child>div{
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    align-items: center;
+    font-size: x-large;
+}
+.paymentPageDiv>div:first-child>div>button{
+    background-color: #465dd4;
+    border: 3px solid white;
+    height: max-content;
+    width: max-content;
+    padding:5px 15px 5px 15px;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    color:white;
+    margin-left: 10px;
+}
+.paymentPageDiv>div:first-child>button{
+    color:white;
+    border:none;
+    background-color: transparent;
+    font-size: xx-large;
+    margin-right: 10px;
+}
+.paymentPageDiv>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:5px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left:10px;
+}
+.paymentPageDiv>div:nth-child(2)>div>input{
+    width:90%;
+    height:30px;
+    border-radius: 5px;
+    border-color: grey;
+    margin-top: -5px;
+}
+.paymentPageDiv>div:nth-child(2)>div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5px;
+    margin-top:15px;
+    align-items: center;
+}
+.paymentPageDiv>div:nth-child(2)>div:last-child>input{
+    width:5%;
+    margin-top: 5px;
+}
+.paymentPageDiv>div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.paymentPageDiv>div:last-child>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:-5px;
+    margin-left: 5px;
+}
+.paymentPageDiv>div:last-child>div>p:first-child{
+    margin-left: -10px;
+    font-weight:500;
+}
+
+.paymentPageDiv>div:last-child>div>p:last-child{
+    margin-top: -10px;
+}
+.paymentPageDiv>div:last-child>button{
+    width:70%;
+    height: fit-content;
+    font-size: x-large;
+    padding:10px 20px 10px 20px;
+    background-color: #2446ea ;
+    color:white;
+    border:none;
+    border-radius: 7px;
+    margin-right: 10px ;
+    background:rgb(27,27,27);
+
+}
+.paymentPageDiv>div:last-child>button:hover{
+    background: linear-gradient(90deg, rgba(27,27,27,1)20%, rgba(0,128,128,1)64%);
+} 
+
+
+/* styliing for the otp page */
+.otpPageDiv{
+    text-align: center;
+    gap:10px;
+    margin-left: -12px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.otpPageDiv>input{
+    width:50%;
+    height:40px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-top: -5px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 35px;
+}
+.otpPageDiv>p:last-child{
+    margin-bottom: 160px;
+}
+
+/* style for thankyou page */
+.continueShoppingBtn{
+    padding:10px 20px 10px 20px;
+    height:max-content;
+    color:white;
+    background-color: #2446ea;
+    border:none;
+    border-radius: 5px;
+    font-size: large;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    background:rgb(27,27,27);
+    margin-bottom: 50px;
+
+}
+.continueShoppingBtn:hover{
+    background: linear-gradient(90deg, rgba(27,27,27,1)20%, rgba(0,128,128,1)64%);
+}
+

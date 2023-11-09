@@ -1,0 +1,172 @@
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 50px;
+    /* color: white; */
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    top: 5px;
+    left: 67%;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width:4%;
+    height:5%;
+    /* width: 100%; */
+    /* z-index: 2; Make sure it's above other content */
+}
+.overlay {
+    /* height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+  }
+.openBtn{
+    cursor: pointer;
+    position:absolute;
+    top: 5px;
+    right: 10px;
+}
+
+
+
+/* cart styling */
+
+.wholeCart{
+    width: 28%;
+    /* background-color: black;  */
+    background-color: white;
+    color: white;
+    /* padding-left: 60px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wholeCart>div:first-child>{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.wholeCart>div:first-child>img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.wholeCart>div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;
+    color:black;
+    padding: 10px;
+    align-items: center;
+}
+.wholeCart>div:last-child>button{
+    background-color: rgb(27,27,27);
+    color: white;
+    padding: 12px 35px 12px 35px;
+    border: none;
+    height: fit-content;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+
+.wholeCart>div:last-child>button:hover{
+    background-color: linear-gradient(90deg, rgba(27,27,27,1)20%, rgba(0,128,128,1)64%);
+}
+.cardDiv{
+    display:flex;
+    flex-direction: row;
+    margin: 5px 5px 5px 10px;
+    color: white;
+    align-items: center;
+}
+.cardDiv>div:last-child{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.cardDiv>div:last-child>p{
+    margin-top: -5px;
+}
+
+
+.cardDiv>div:last-child>div{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0x 5px 10px;
+    gap:10px;
+    align-items: center;
+}
+.cardDiv>div:last-child>div>button{
+    padding: 5px 15px 5px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+}
+
+.cardDiv>div:last-child>div>button:last-child{
+    padding: 9px 15px 9px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: max-content;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.hrLine{
+    color: white;
+    width:100%;
+    font-weight: 100;
+}
+
+
+/* scrolling container */
+.scrollableContainer {
+    margin: 10px 10px 10px 10px;
+    max-height: 500px;
+    max-width: fit-content;
+    overflow-y: auto; 
+    scrollbar-width: auto;
+    scrollbar-color: rgb(8, 204, 218);
+    background-color: black;
+    color:white;
+  }
+  
+  .scrollableContainer::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 5px;
+  }
+  
+  .scrollableContainer::-webkit-scrollbar-thumb {
+    background-color: #689f9c; /* Color of the thumb */
+    /* border-radius: 4px; Rounded corners */
+  }
+  
+  .scrollableContainer::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Color of the track */
+  }

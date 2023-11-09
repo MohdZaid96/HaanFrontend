@@ -1,0 +1,296 @@
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161616;
+}
+section .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: teal;
+  clip-path: circle(70% at right -20%);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+}
+.content .textBox h2 {
+  /* color: rgb(0, 0, 0); */
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+.content .textBox p {
+  /* color: rgb(0, 0, 0); */
+  color: white;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: teal;
+  color: white;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.content .textBox a:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    197deg,
+    rgba(0, 0, 0, 1) 36%,
+    rgba(0, 128, 128, 1) 67%
+  );
+}
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 35px;
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 27, 27, 1) 20%,
+    rgba(0, 128, 128, 1) 64%
+  );
+}
+.msg p {
+  font-size: 1.2rem;
+  margin: 2%;
+  color: white;
+}
+.TopHeadingAndBtn{
+  width: 95%;
+  height: 60px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
+.TopHeadingAndBtn p span{
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+   width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+  
+}
+.TopHeadingAndBtn p span:hover{
+  background: #222;
+  color: white;
+}
+
+
+
+
+
+
+.productCard{
+  width: 95%;
+  display: flex;
+  gap: 10px;
+  overflow-x:scroll;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  height: 68%;
+  background-color: #fefbfb;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-bottom: 30px; 
+  margin-top: 15px;
+
+}
+.productCard::-webkit-scrollbar{
+  display: none;
+}
+.productCard .cardChild{
+  min-width: 20rem;
+}
+.productCard img{
+  width: 100%;
+}
+.productCard>div{
+  padding: 10px;
+}
+.productCard>div>div>img{
+  width: 100%;
+}
+.productCard .cardDetails h3{
+  text-align: center;
+  font-size: 17px;
+}
+.productCard .cardDetails p{
+   display: flex;
+   justify-content: space-evenly;
+}
+.productCard .cardDetails p strike{
+  color: crimson;
+}
+.productCard button{
+  display: block;
+  margin: auto;
+  border:none;
+  padding: 8px;
+  background-color: teal;
+  border-radius: 8px;
+  color: white;
+} 
+
+.bannerSlider{
+  width: 95%;
+  height: 25rem;
+  display: flex;
+  overflow-x: scroll;
+  margin: auto;
+  gap: 15px;
+}
+.bannerSlider .silderImg img{
+  width: 90rem;
+  height: 25rem;
+}
+.bannerSlider::-webkit-scrollbar{
+  display: none;
+}
+
+ 
+
+
+
+.ssContainer{
+  display: flex;
+  max-width: 2000px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ssContainer img{
+   width: 60%;
+}
+
+
+.aboutContainer{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutImg{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+
+}
+.aboutImg img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+.aboutImg:hover img{
+ transform: scale(1.2);
+}
+.aboutContent{
+  flex: 1;
+}
+.aboutContent h2{
+font-size: 23px;
+margin-bottom: 15px;
+color: black;
+}
+.aboutContent p{
+font-size: 18px;
+line-height: 1.5;
+color: black;
+}
+.aboutContent .shopNow{
+display: inline-block;
+padding: 10px 20px; 
+font-size: 19px;
+text-decoration: none;
+border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  background: teal;
+  color: white;
+}
+.aboutContent .shopNow:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(197deg, rgba(0,0,0,1) 36%, rgba(0,128,128,1) 67%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .msg > p > strong {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .productCard{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

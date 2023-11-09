@@ -1,0 +1,164 @@
+.login,
+.sign-up {
+  width: 50%;
+  margin: 5rem auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 1rem;
+}
+
+.login > h1,
+.sign-up > h1 {
+  margin-bottom: -1rem;
+}
+
+.login > form,
+.sign-up > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.login > form label {
+  padding: 0;
+  margin: 0;
+}
+
+.login > form input,
+.sign-up > form input {
+  height: 1.5rem;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.login > form input[type="submit"],
+.sign-up > form input[type="submit"] {
+  height: 2.5rem;
+  border: none;
+  width: 50%;
+  align-self: flex-end;
+  background-color: #1473e6;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login > form input[type="submit"]:hover,
+.sign-up > form input[type="submit"]:hover {
+  background-color: #0a60c9;
+}
+
+.login > div > button,
+.sign-up > div > button {
+  background-color: #fff;
+  border: none;
+  color: #1473e6;
+  font-weight: 700;
+}
+
+.login > div > button:hover,
+.sign-up > div > button:hover {
+  color: #0a60c9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login hr,
+.sign-up hr {
+  width: 100%;
+  /* border: none; */
+  border-style: solid none none none;
+}
+
+/* .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  } */
+
+.login .fa,
+.sign-up .fa {
+  padding: 13px;
+  font-size: 22px;
+  /* width: 30px; */
+  /* height: 30px; */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add a hover effect if you want */
+.login .fa:hover,
+.sign-up .fa:hover {
+  opacity: 0.7;
+  size-adjust: 100%;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.login .fa-facebook,
+.sign-up .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.login .fa-twitter,
+.sign-up .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.login .fa-google,
+.sign-up .fa-google {
+  background: #ba2abc;
+  color: #fff;
+}
+
+.login .icons,
+.sign-up .icons {
+    display: flex; 
+    justify-content: center;
+    gap:20px;
+    /* width: 40px;
+    height: 40px; */
+}
+
+@media screen and (max-width: 700px) {
+  .login,
+  .sign-up {
+    width: 100%;
+    padding:8% 5%;
+    margin: -3rem auto -1rem;
+    border-radius: 0;
+  }
+  .login .fa,
+.sign-up .fa {
+  padding: 15px;
+  font-size: 20px;
+
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login .icons,
+.sign-up .icons {
+    display: flex; 
+    justify-content: space-around;
+}
+}
